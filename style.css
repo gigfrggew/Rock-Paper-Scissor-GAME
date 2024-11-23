@@ -1,0 +1,101 @@
+/* Universal Reset and Styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+/* Circle Button Styling */
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.choice:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+/* Choices Container */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+/* Scoreboard Styling */
+.score-board {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+/* Message Box */
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    margin-top: 5rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* --- Simplified Responsive Design for All Screens Less Than 1000px --- */
+@media only screen and (max-width: 1000px) {
+    /* Header */
+    h1 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        height: 3rem;
+    }
+
+    /* Circle Buttons */
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    /* Choices Container */
+    .choices {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    /* Scoreboard */
+    .score-board {
+        flex-direction: column; /* Stack scores vertically */
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    /* Message Box */
+    #msg {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        padding: 0.8rem;
+    }
+}
